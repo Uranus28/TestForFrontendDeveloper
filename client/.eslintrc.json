@@ -53,7 +53,15 @@
         "@typescript-eslint/ban-ts-comment":"off",
         "@typescript-eslint/ban-types":"off",
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
+        "react/function-component-definition": [
+            2,
+            {
+              "namedComponents": "arrow-function",
+              "unnamedComponents": "arrow-function"
+            }
+          ],
+        "react/button-has-type":"off",
+        "react/jsx-filename-extension":"off"
         },
     "settings": {
                 "react": {

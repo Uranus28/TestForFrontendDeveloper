@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {FC} from 'react';
 import styles from './App.css';
+import {RefreshButton} from './shared/RefreshButton/RefreshButton';
 
-export function App() {
+export const App: FC = () => {
   return (
     <div className={styles.body}>
       <header>
-        <img src={logo} alt="logo" />
+        <RefreshButton />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -16,4 +16,4 @@ export function App() {
       </header>
     </div>
   );
-}
+};

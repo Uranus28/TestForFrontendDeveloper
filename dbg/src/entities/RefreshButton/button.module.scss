@@ -1,0 +1,40 @@
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+@import '../../shared/styles/breakpoints.scss';
+@import '../../shared/styles/styles';
+.button{
+    @include default-style;
+    font-family: $font-MontserratRegular;
+    font-size: 1em;
+    margin: 5px auto;
+    padding: .3em 2em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: $default-color;
+    color: $button-font-color;
+    height: 48px;
+    width: 160px;
+    letter-spacing: 0.5px;
+
+    &:hover{
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+    &:active{
+        background-color: $press-color;
+        cursor: pointer;
+    }
+    @include mobile{
+        width: 308px;
+    }
+    
+    
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+

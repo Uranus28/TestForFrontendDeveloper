@@ -1,0 +1,48 @@
+$font-path: "./fonts/Montserrat" !default;
+
+@use 'sass:math';
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+
+/* миксин для размера шрифта и высоты линии */
+
+@mixin font-size($size, $lh: 1.8) {
+  font-size: $size;
+  line-height: math.ceil($lh * $size);
+}
+
+/* шрифты */
+
+@font-face {
+    font-family:"MontserratLight" ;
+    src: url('#{$font-path}/Montserrat-Light.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"MontserratMedium" ;
+    src: url('#{$font-path}/Montserrat-Medium.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"MontserratSemiBold" ;
+    src: url('#{$font-path}/Montserrat-SemiBold.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"MontserratRegular" ;
+    src: url('#{$font-path}/Montserrat-Regular.ttf');
+    font-weight: normal;
+}
+
+$font-MontserratLight: 'MontserratLight';
+$font-MontserratMedium: 'MontserratMedium';
+$font-MontserratSemiBold: 'MontserratSemiBold';
+$font-MontserratRegular: 'MontserratRegular';

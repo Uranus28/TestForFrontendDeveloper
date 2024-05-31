@@ -1,0 +1,51 @@
+/* Миксин для мобильных устройств */
+$breakpoints: (
+  "xs": 0,
+  "sm": 359px,
+  "md": 767px,
+  "xl": 1199px,
+);
+
+@mixin mobile {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+/* @mixin mobile {
+  @media only screen and (max-width:767)  {
+    @content;
+  }
+} */
+
+/* Миксин для планшетных устройств */
+
+/* @mixin desktop {
+  @media only screen and (max-width:1023) {
+    @content;
+  }
+} */
+
+/* Миксин для настольных устройств */
+
+/* @mixin desktop {
+  @media only screen and (min-width: 1024) {
+    @content;
+  }
+} */
