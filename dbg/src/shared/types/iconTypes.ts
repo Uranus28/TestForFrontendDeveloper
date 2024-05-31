@@ -1,4 +1,5 @@
-// eslint-disable-next-line no-shadow
+/* eslint-disable no-shadow */
+/* eslint-disable no-unused-vars */
 export enum IconType {
   Search,
   Refresh,
@@ -10,4 +11,9 @@ export enum IconType {
   Email,
   Date,
   Age,
+  Cloud,
+  Cold,
+  Loading,
+  Sun,
+  XButton,
 }
