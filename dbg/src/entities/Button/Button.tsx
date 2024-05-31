@@ -1,8 +1,7 @@
 import { FC } from "react";
-// import RefreshButtonSVG from '../../entities/Buttons/RefreshButton.svg';
 import { ReactComponent as RefreshIcon } from "../../shared/assets/icons/refresh.svg";
 import { ReactComponent as SearchIcon } from "../../shared/assets/icons/search.svg";
-import styles from "./button.module.scss";
+import style from "./button.module.scss";
 import { IconType } from "../../shared/types/iconTypes";
 
 interface ButtonProps {
@@ -17,9 +16,9 @@ export const Button: FC<ButtonProps> = ({
   onClick = () => {},
 }) => {
   return (
-    <button className={styles.button} onClick={onClick}>
-      {icon === IconType.Refresh && <RefreshIcon className={styles.icon} />}
-      {icon === IconType.Search && <SearchIcon className={styles.icon} />}
+    <button className={style.button} onClick={onClick}>
+      {icon === IconType.Refresh && <RefreshIcon className={style.icon} />}
+      {icon === IconType.Search && <SearchIcon className={style.icon} />}
       {text}
     </button>
   );

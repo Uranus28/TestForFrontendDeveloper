@@ -6,16 +6,23 @@ $breakpoints: (
   "xl": 1199px,
 );
 
+/* Миксин для мобильных устройств */
+
 @mixin mobile {
   @media (max-width: map-get($breakpoints, "sm")) {
     @content;
   }
 }
+/* Миксин для планшетных устройств */
+
 @mixin tablet {
   @media (max-width: map-get($breakpoints, "md")) {
     @content;
   }
 }
+
+/* Миксин для настольных устройств */
+
 @mixin desktop {
   @media (max-width: map-get($breakpoints, "xl")) {
     @content;
@@ -27,25 +34,3 @@ $breakpoints: (
     @content;
   }
 }
-
-/* @mixin mobile {
-  @media only screen and (max-width:767)  {
-    @content;
-  }
-} */
-
-/* Миксин для планшетных устройств */
-
-/* @mixin desktop {
-  @media only screen and (max-width:1023) {
-    @content;
-  }
-} */
-
-/* Миксин для настольных устройств */
-
-/* @mixin desktop {
-  @media only screen and (min-width: 1024) {
-    @content;
-  }
-} */

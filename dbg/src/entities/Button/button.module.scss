@@ -3,19 +3,12 @@
 @import '../../shared/styles/breakpoints.scss';
 @import '../../shared/styles/styles';
 .button{
-    @include default-style;
-    font-family: $font-MontserratRegular;
-    font-size: 1em;
+    @include text-with-svg($font-MontserratRegular,1em,$button-font-color,48px,160px);
     margin: 5px auto;
     padding: .3em 2em;
-    text-align: center;
-    border: none;
     border-radius: 5px;
     outline: none;
     background-color: $default-color;
-    color: $button-font-color;
-    height: 48px;
-    width: 160px;
     letter-spacing: 0.5px;
 
     &:hover{
