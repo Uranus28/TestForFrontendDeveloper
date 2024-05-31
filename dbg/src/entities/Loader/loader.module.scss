@@ -1,0 +1,22 @@
+@import '../../shared/styles/styles';
+
+.loaderContainer {
+    @include default-style-size;
+    position: fixed;
+    /* background: rgba(0, 0, 0, 0.834); */
+    z-index: 1;
+
+    .spinner {
+        width: 64px;
+        height: 64px;
+        animation: spin-anim 2.2s linear infinite;
+    }
+
+    @keyframes spin-anim {
+        0%   {transform: scale(1)  rotate(0deg);}
+        33%  {transform: scale(1.2) rotate(120deg);}
+        67%  {transform: scale(0.8) rotate(240deg);}
+        100% {transform: scale(1) rotate(360deg);}        
+    }
+}
+

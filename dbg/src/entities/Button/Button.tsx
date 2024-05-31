@@ -7,7 +7,6 @@ import { IconType } from "../../shared/types/iconTypes";
 
 interface ButtonProps {
   text: string;
-  // eslint-disable-next-line react/require-default-props
   icon?: IconType;
 }
 
