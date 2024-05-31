@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { App } from "./App";
+import { BrowserRouter } from "react-router-dom";
+// import { App } from "./App";
+import { App } from "./app/App";
 import reportWebVitals from "./reportWebVitals";
 import { Container } from "./shared/Container/Container";
 
@@ -9,9 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Container>
-      <App />
-    </Container>
+    <BrowserRouter>
+      <Container>
+        <App />
+      </Container>
+    </BrowserRouter>
   </React.StrictMode>,
 );
 
