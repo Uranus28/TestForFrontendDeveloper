@@ -52,6 +52,7 @@
       "react/no-unescaped-entities":"off",
       "prettier/prettier": ["error", { "endOfLine": "auto" }],
       "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/no-empty-function":"warn",
       "@typescript-eslint/ban-ts-comment":"off",
       "@typescript-eslint/ban-types":"off",
       "react/react-in-jsx-scope": "off",

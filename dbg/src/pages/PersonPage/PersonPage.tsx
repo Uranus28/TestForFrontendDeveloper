@@ -15,3 +15,6 @@ export const PersonPage: FC = () => {
     </div>
   );
 };
+
+// export default function Router()
+// { return useRoutes([ { path: 'auth', children: [{path: 'login',element:<Login />),},],}, { path: '/', element:<DashboardLayout />, children: [ { element: <MainPage /> }, ...]}

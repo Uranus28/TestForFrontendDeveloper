@@ -1,10 +1,17 @@
 import { FC } from "react";
 import { useNavigate, useRouteError } from "react-router-dom";
 import { Button } from "../../entities/Button/Button";
-import { RejectedDataType } from "../ErrorPage/ErrorPage";
 import { Container } from "../../shared/Container/Container";
 
-export const WeatherPage: FC = () => {
+/** Type of error sent to the storage. */
+export interface RejectedDataType {
+  /** Error message.  */
+  readonly messageError: string;
+  /** Error status. */
+  readonly status?: string;
+}
+
+export const ErrorPage: FC = () => {
   const error = useRouteError();
   const knownError = error as RejectedDataType;
 
@@ -27,5 +34,4 @@ export const WeatherPage: FC = () => {
       />
     </Container>
   );
-  // return <div>WeatherPage</div>;
 };

@@ -3,12 +3,11 @@
 .loaderContainer {
     @include default-style-size;
     position: fixed;
-    /* background: rgba(0, 0, 0, 0.834); */
     z-index: 1;
 
     .spinner {
-        width: 64px;
-        height: 64px;
+        width: 42px;
+        height: 42px;
         animation: spin-anim 2.2s linear infinite;
     }
 
