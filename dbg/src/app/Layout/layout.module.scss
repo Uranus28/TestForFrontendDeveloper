@@ -1,0 +1,10 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+
+.layout{
+    @include page-style;
+    background-color: $layout-color;
+    position: fixed;
+    margin-left: -8px;
+    margin-right: -8px;
+}

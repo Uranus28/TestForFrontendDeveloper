@@ -1,29 +1,6 @@
-@import '../../shared/styles/colors.scss';
-@import '../../shared/styles/fonts.scss';
 @import '../../shared/styles/breakpoints.scss';
-@import '../../shared/styles/styles';
 @import '../../shared/styles/effects.scss';
 
-@mixin href-active($is-active:true){
-    padding: .5em 1em;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    margin-right: 32px;
-
-    @if $is-active{
-        @include text-with-svg($font-MontserratMedium,1em,$default-color,32px,105px);
-    }
-    @else{
-        @include text-with-svg($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
-    }
-
-    &:hover{
-        color: $hover-color;
-    }
-    &:active{
-        color: $press-color;
-    }
-}
 
 .header{
     display:flex;
@@ -32,19 +9,22 @@
     background-color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     @include shadow-medium;
     .ul{
         display:flex;
         flex-direction: row; 
         align-items: center;
-        .aActive{
-            @include href-active($is-active:true)
-        } 
-        .aInactive{
-            @include href-active($is-active:false)            
-        }    
-        
+        padding-left: 1.6em;
+        width:85%;
+
+        @include tablet{
+            width:90%;
+        }
+        @include mobile{
+            width:100%;
+        }
     }
+   
 }
