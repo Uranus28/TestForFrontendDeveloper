@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 @mixin default-style{
   display: flex;
   align-items: center;
@@ -37,8 +39,25 @@
 
 /*mixin - коробка*/
 
-@mixin box($width, $height: $width) {
+@mixin box-div($width, $height: $width) {
   @include default-style;
   width: $width;
   height: $height;
+}
+
+@mixin box-page($width, $height: $width){  
+    @include default-style;
+    @include box-div($width:$width,$height:$height);
+    background-color: white;
+    border-radius: 20px;
+    flex-direction: column;
+    position:absolute;
+    top : 84px;
+    @include shadow-medium;
+    @include tablet{
+        width:100%;
+    }
+    @include mobile{
+        width:100%;
+    }
 }

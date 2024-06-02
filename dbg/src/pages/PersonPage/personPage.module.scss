@@ -1,9 +1,7 @@
 @import '../../shared/styles/styles';
 @import '../../shared/styles/colors.scss';
+@import '../../shared/styles/effects.scss';
 
-.divPage{
-    @include page-style;
-    background-color: $layout-color;
-    margin-left: -8px;
-    margin-right: -8px;
+.box{
+    @include box-page($width:1100px,$height:418px)
 }
