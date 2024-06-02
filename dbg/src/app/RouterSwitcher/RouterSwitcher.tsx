@@ -1,22 +1,28 @@
 import { FC } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import { ErrorPage } from "../../pages/ErrorPage/ErrorPage";
 import { NotFoundPage } from "../../pages/NotFoundPage/NotFoundPage";
 import { PersonPage } from "../../pages/PersonPage/PersonPage";
 import { WeatherPage } from "../../pages/WeatherPage/WeatherPage";
 import { ROUTE_CONSTANTS } from "../../shared/config/routes";
+import { Layout } from "../Layout/Layout";
 
 export const RouterSwitcher: FC = () => {
-  const router = createBrowserRouter([
+  const router = useRoutes([
     {
-      path: ROUTE_CONSTANTS.PERSON,
-      element: <PersonPage />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: ROUTE_CONSTANTS.WEATHER,
-      element: <WeatherPage />,
-      errorElement: <ErrorPage />,
+      element: <Layout />,
+      children: [
+        {
+          path: ROUTE_CONSTANTS.PERSON,
+          element: <PersonPage />,
+          errorElement: <ErrorPage />,
+        },
+        {
+          path: ROUTE_CONSTANTS.WEATHER,
+          element: <WeatherPage />,
+          errorElement: <ErrorPage />,
+        },
+      ],
     },
     {
       path: "*",
@@ -24,5 +30,5 @@ export const RouterSwitcher: FC = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return router;
 };

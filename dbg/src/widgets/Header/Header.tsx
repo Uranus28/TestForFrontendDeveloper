@@ -2,13 +2,7 @@
 import { FC, useState } from "react";
 import styles from "./header.module.scss";
 import { pages } from "../../shared/config/consts";
-import { IconType } from "../../shared/types/iconTypes";
-import { ReactComponent as PersonAvtiveIcon } from "../../shared/assets/icons/personActive.svg";
-import { ReactComponent as WeatherActiveIcon } from "../../shared/assets/icons/weatherActive.svg";
-import { ReactComponent as PersonInactiveIcon } from "../../shared/assets/icons/personInactive.svg";
-import { ReactComponent as WeatherInactiveIcon } from "../../shared/assets/icons/weatherInactive.svg";
 import { LinkH } from "../../features/Link/LinkH";
-import { HeaderIcon } from "./HeaderIcon";
 
 export const Header: FC = () => {
   const [page, setPage] = useState(window.location.pathname);
@@ -18,7 +12,13 @@ export const Header: FC = () => {
         {pages.map((navItem) => {
           if (page === navItem.link)
             return (
-              <LinkH name={navItem.name} link={navItem.link} hasIcon isActive />
+              <LinkH
+                name={navItem.name}
+                link={navItem.link}
+                hasIcon
+                isActive
+                setPage={setPage}
+              />
             );
           return (
             <LinkH
@@ -26,6 +26,7 @@ export const Header: FC = () => {
               link={navItem.link}
               hasIcon
               isActive={false}
+              setPage={setPage}
             />
           );
         })}

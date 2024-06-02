@@ -9,6 +9,7 @@ interface LinkHProps {
   link: string;
   hasIcon: boolean;
   isActive: boolean;
+  setPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const LinkH: FC<LinkHProps> = ({
@@ -16,38 +17,25 @@ export const LinkH: FC<LinkHProps> = ({
   link,
   hasIcon = false,
   isActive,
+  setPage,
 }) => {
-  // const navigate = useNavigate();
-
-  // const navigate = useNavigate();
   return (
-    // <link
-    //   key={name}
-    //   className={isActive ? styles.aActive : styles.aInactive}
-    //   href={link}
-    //   // onClick={() => {
-    //   //   navigate(link);
-    //   // }}
-    // >
-    //   {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
-    //   {name}
-    // </link>
-    // to={link}
-    // <Link
-    //   key={name}
-    //   className={isActive ? styles.aActive : styles.aInactive}
-    //   to={link}
-    // >
-    //   {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
-    //   {name}
-    // </Link>
-    <a
+    <Link
       key={name}
       className={isActive ? styles.aActive : styles.aInactive}
-      href={link}
+      to={link}
+      onClick={() => setPage(link)}
     >
       {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
       {name}
-    </a>
+    </Link>
+    // <a
+    //   key={name}
+    //   className={isActive ? styles.aActive : styles.aInactive}
+    //   href={link}
+    // >
+    //   {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
+    //   {name}
+    // </a>
   );
 };
