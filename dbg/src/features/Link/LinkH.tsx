@@ -18,6 +18,8 @@ export const LinkH: FC<LinkHProps> = ({
   isActive,
 }) => {
   // const navigate = useNavigate();
+
+  // const navigate = useNavigate();
   return (
     // <link
     //   key={name}
@@ -39,12 +41,10 @@ export const LinkH: FC<LinkHProps> = ({
     //   {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
     //   {name}
     // </Link>
-
     <a
       key={name}
       className={isActive ? styles.aActive : styles.aInactive}
       href={link}
-      onClick={() => console.log(link)}
     >
       {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
       {name}
