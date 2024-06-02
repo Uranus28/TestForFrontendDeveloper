@@ -1,6 +1,5 @@
-import React, { FC, SVGProps } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { IconType } from "../../shared/types/iconTypes";
+import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import styles from "./linkH.module.scss";
 import { HeaderIcon } from "../../widgets/Header/HeaderIcon";
 
@@ -29,13 +28,5 @@ export const LinkH: FC<LinkHProps> = ({
       {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
       {name}
     </Link>
-    // <a
-    //   key={name}
-    //   className={isActive ? styles.aActive : styles.aInactive}
-    //   href={link}
-    // >
-    //   {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
-    //   {name}
-    // </a>
   );
 };
