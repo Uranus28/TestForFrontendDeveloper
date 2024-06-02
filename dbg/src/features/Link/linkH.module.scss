@@ -1,7 +1,6 @@
 @import '../../shared/styles/colors.scss';
 @import '../../shared/styles/fonts.scss';
 @import '../../shared/styles/styles';
-@import '../../shared/assets/icons/icons';
 
 @mixin href-active($is-active:true){
     padding: .5em 1em;
