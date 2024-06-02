@@ -34,3 +34,11 @@
     width: $width;
     letter-spacing: 0.5px;
 }
+
+/*mixin - коробка*/
+
+@mixin box($width, $height: $width) {
+  @include default-style;
+  width: $width;
+  height: $height;
+}

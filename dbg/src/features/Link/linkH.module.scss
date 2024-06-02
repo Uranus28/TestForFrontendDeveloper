@@ -1,6 +1,7 @@
 @import '../../shared/styles/colors.scss';
 @import '../../shared/styles/fonts.scss';
 @import '../../shared/styles/styles';
+@import '../../shared/assets/icons/icons';
 
 @mixin href-active($is-active:true){
     padding: .5em 1em;
@@ -9,16 +10,36 @@
     margin-right: 16px;
 
     @if $is-active{
+        .headerIcon{
+            g{
+                stroke:$default-color
+            }
+        }
         @include text-with-svg($font-MontserratMedium,1em,$default-color,32px,105px);
     }
     @else{
+        .headerIcon{
+            g{
+                stroke:$inactive-button-font-color
+            }
+        }
         @include text-with-svg($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
     }
 
     &:hover{
+        .headerIcon{
+            g{
+                stroke:$hover-color
+            }
+        }
         color: $hover-color;
     }
     &:active{
+        .headerIcon{
+            g{
+                stroke:$press-color
+            }
+        }
         color: $press-color;
     }
 }

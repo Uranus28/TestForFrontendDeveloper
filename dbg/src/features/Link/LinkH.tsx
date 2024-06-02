@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
+import { Icon } from "./Icon";
 import styles from "./linkH.module.scss";
-import { HeaderIcon } from "../../widgets/Header/HeaderIcon";
 
 interface LinkHProps {
   name: string;
@@ -25,7 +25,7 @@ export const LinkH: FC<LinkHProps> = ({
       to={link}
       onClick={() => setPage(link)}
     >
-      {hasIcon && <HeaderIcon path={link as string} isActive={isActive} />}
+      {hasIcon && <Icon path={link as string} />}
       {name}
     </Link>
   );

@@ -8,7 +8,7 @@ export const Header: FC = () => {
   const [page, setPage] = useState(window.location.pathname);
   return (
     <header className={styles.header}>
-      <ul className={styles.ul}>
+      <div className={styles.ul}>
         {pages.map((navItem) => {
           if (page === navItem.link)
             return (
@@ -30,7 +30,7 @@ export const Header: FC = () => {
             />
           );
         })}
-      </ul>
+      </div>
     </header>
   );
 };
