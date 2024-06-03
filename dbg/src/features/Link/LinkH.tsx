@@ -20,7 +20,6 @@ export const LinkH: FC<LinkHProps> = ({
 }) => {
   return (
     <Link
-      key={name}
       className={isActive ? styles.aActive : styles.aInactive}
       to={link}
       onClick={() => setPage(link)}
