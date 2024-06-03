@@ -1,5 +1,5 @@
 export const ROUTE_CONSTANTS = {
-  PERSON: "/person",
+  PERSON: "/",
   WEATHER: "/weather",
   NOT_FOUND: "/404",
 };
