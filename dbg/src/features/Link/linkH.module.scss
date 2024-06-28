@@ -14,7 +14,7 @@
                 stroke:$default-color
             }
         }
-        @include text-with-svg($font-MontserratMedium,1em,$default-color,32px,105px);
+        @include text-center($font-MontserratMedium,1em,$default-color,32px,105px);
     }
     @else{
         .headerIcon{
@@ -22,7 +22,7 @@
                 stroke:$inactive-button-font-color
             }
         }
-        @include text-with-svg($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
+        @include text-center($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
     }
 
     &:hover{

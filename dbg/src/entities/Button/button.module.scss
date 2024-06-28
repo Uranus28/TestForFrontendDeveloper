@@ -3,7 +3,7 @@
 @import '../../shared/styles/breakpoints.scss';
 @import '../../shared/styles/styles';
 .button{
-    @include text-with-svg($font-MontserratRegular,1em,$button-font-color,48px,160px);
+    @include text-center($font-MontserratRegular,1em,$button-font-color,48px,160px);
     margin: 5px auto;
     padding: .3em 2em;
     border-radius: 5px;

@@ -23,9 +23,9 @@
   margin-top: -8px;
 }
 
-/* mixin для выравнивания текста с иконкой */
+/* mixin для выравнивания текста для */
 
-@mixin text-with-svg($font-family,$font-size,$color,$height,$width){
+@mixin text-center($font-family,$font-size,$color,$height,$width){
     @include default-style;
     font-family: $font-family;
     font-size: $font-size;
@@ -45,8 +45,17 @@
   height: $height;
 }
 
+@mixin box-div-white($width, $height: $width){
+  @include box-div($width:$width,$height:$height);
+  background-color: white;
+  border-radius: 20px;
+  flex-direction: column;
+  @include shadow-small;
+}
+
+/*mixin - главная коробка на странице*/
+
 @mixin box-page($width, $height: $width){  
-    @include default-style;
     @include box-div($width:$width,$height:$height);
     background-color: white;
     border-radius: 20px;
@@ -56,8 +65,10 @@
     @include shadow-medium;
     @include tablet{
         width:100%;
+        border-radius: 0px;
     }
     @include mobile{
+        border-radius: 0px;
         width:100%;
     }
 }
