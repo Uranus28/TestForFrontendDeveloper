@@ -7,16 +7,50 @@
     @include box-div-white($width:308px,$height:262px);
     border: 15px;
     position: relative;
+    p{
+        @include text-center-p($font-MontserratRegular,0.875emem, $field-font-color);
+        width:100%;        
+        margin:5px
+        
+    }
+    br {
+        display: block;
+        margin: 100px 0;
+     }
     .profileText{
         @include text-center($font-MontserratMedium,0.875em,$inactive-button-font-color,17px,70px);
         letter-spacing: 0.7px;
         position:absolute;
+        margin:15px;
         top: 12px;    }
     .boldName{
-        $boldName-color: black;
-        @include text-center($font-MontserratSemiBold,1.5em, $boldName-color,29px,100%);
+        @include text-center($font-MontserratSemiBold,1.5em, black,29px,100%);
         letter-spacing: 0px;
         position:absolute;
-        top: 66px;  
-     }
+        margin:15px;
+        top: 66px;  }
+    .regularText{
+        @include text-center-p($font-MontserratRegular,0.875emem, black);
+        letter-spacing: 0px;
+        // position:absolute;
+        // top: 66px;
+    }
+    .linkText{
+        @include text-center-p($font-MontserratRegular,0.875emem, $default-color);
+        letter-spacing: 0px;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+            color: $hover-color;
+            cursor: pointer;
+        }
+        &:active{
+            text-decoration: none;
+            color: $press-color;
+            cursor: pointer;
+        }
+        // position:absolute;
+        // top: 66px;
+    }
+
 }
