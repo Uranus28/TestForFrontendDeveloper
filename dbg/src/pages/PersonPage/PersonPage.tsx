@@ -5,6 +5,7 @@ import { IconType } from "../../shared/types/iconTypes";
 import styles from "./personPage.module.scss";
 import { Container } from "../../shared/Container/Container";
 import { Profile } from "../../widgets/Profile/Profile";
+import { ProfileInfo } from "../../widgets/ProfileInfo/ProfileInfo";
 
 export const PersonPage: FC = () => {
   return (
@@ -12,7 +13,7 @@ export const PersonPage: FC = () => {
       <div className={styles.box}>
         <div className={styles.insideBox}>
           <Profile />
-          <Profile />
+          <ProfileInfo />
         </div>
         <div className={styles.buttonBox}>
           <Button text="Refresh" icon={IconType.Refresh} />

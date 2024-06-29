@@ -4,41 +4,28 @@
 @import '../../shared/styles/fonts.scss';
 @import '../../shared/styles/breakpoints.scss';
 
-.profile{
-    @include box-div-white($width:308px,$height:262px);
+.profileInfo{
+    @include box-div-white($width:688px,$height:262px);
     border: 15px;
     position: relative;
     top: -10%;
     margin:15px;
+    @include tablet{
+        width:400px
+    }
     @include mobile{
         top: -4.6%;
         margin-bottom: -2px;
-        height:250px
+        height:250px;
+        width:308px
     }
-    .profileButton{
-        position: absolute;
-        right:5%;
-        top:5%;
-        &:hover{
-            g{
-                stroke:$hover-color;
-                cursor: pointer;
-            }
-            cursor: pointer;
-        }
-        &:active{
-            g{
-                stroke:$press-color;
-
-            }
-            cursor: pointer;
-        }
-        
-    }
+    
     p{
         @include text-center-p($font-MontserratRegular,0.875emem, $field-font-color);
-        width:100%;        
+        justify-content: left;
+        width:90%;        
         margin:5px
+        
         
     }
     br {
@@ -77,4 +64,10 @@
         }
     }
 
+}
+.icon{
+    margin-right: 5px;
+    g{
+        stroke:$field-font-color;
+    }
 }

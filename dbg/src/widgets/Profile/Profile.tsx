@@ -1,5 +1,6 @@
 import { FC } from "react";
 import styles from "./profile.module.scss";
+import { ReactComponent as EditIcon } from "../../shared/assets/icons/edit.svg";
 
 export const Profile: FC = () => {
   return (
@@ -16,6 +17,7 @@ export const Profile: FC = () => {
         Password:
         <span className={styles.linkText}>change password</span>
       </p>
+      <EditIcon className={styles.profileButton} />
     </div>
   );
 };
