@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./profileInfo.module.scss";
 import { ReactComponent as GenderIcon } from "../../shared/assets/icons/gender.svg";
 import { ReactComponent as NameIcon } from "../../shared/assets/icons/name.svg";
@@ -7,7 +7,8 @@ import { ReactComponent as DateIcon } from "../../shared/assets/icons/date.svg";
 import { ReactComponent as AgeIcon } from "../../shared/assets/icons/age.svg";
 
 export const ProfileInfo: FC = () => {
-  return (
+  const [mode, setMode] = useState(true);
+  return mode ? (
     <div className={styles.profileInfo}>
       <p id="info">
         <GenderIcon className={styles.icon} />
@@ -35,5 +36,7 @@ export const ProfileInfo: FC = () => {
         <span className={styles.regularText}>age</span>
       </p>
     </div>
+  ) : (
+    <div className={styles.profileInfo}>Насьройки</div>
   );
 };
