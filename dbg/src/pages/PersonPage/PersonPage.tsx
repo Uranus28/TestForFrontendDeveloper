@@ -10,12 +10,17 @@ export const PersonPage: FC = () => {
   return (
     <Container>
       <div className={styles.box}>
-        <Profile />
+        <div className={styles.insideBox}>
+          <Profile />
+          <Profile />
+        </div>
+        <div className={styles.buttonBox}>
+          <Button text="Refresh" icon={IconType.Refresh} />
+        </div>
         {/* <div>
         <Loader />
       </div> */}
-        {/* <Button text="Refresh" icon={IconType.Refresh} />
-        <Button text="Save" icon={IconType.Date} />
+        {/* <Button text="Save" icon={IconType.Date} />
         <Button text="Search" icon={IconType.Search} /> */}
       </div>
     </Container>
