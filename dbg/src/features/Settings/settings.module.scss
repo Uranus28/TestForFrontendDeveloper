@@ -1,0 +1,14 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+
+.settingsDiv{
+    @include default-style-size;
+    flex-direction: column;
+    margin-top: 25px;
+    .divElem{
+        align-self: self-start;
+        width:94%;        
+        margin-left:10px;
+    }
+}

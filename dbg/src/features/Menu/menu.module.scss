@@ -1,0 +1,59 @@
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+@import '../../shared/styles/styles';
+
+@mixin underline{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+}
+
+@mixin menu-item($is-active:true){
+    padding: .5em 1em;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    margin-right: 16px;
+    background-color: transparent;
+    @if $is-active{
+        @include text-center($font-MontserratMedium,1em,$default-color,32px,105px);
+    }
+    @else{
+        @include text-center($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
+    }
+    &:hover{
+        color: $hover-color;
+        cursor: pointer;
+    }
+    &:active{
+        color: $press-color;
+        cursor: pointer;
+    }
+}
+
+.menu{
+    display:flex;
+    flex-direction: row; 
+    @include underline;
+    width:94%;
+    @include tablet{
+        width:92%;
+    }
+    position: absolute;
+    top:3%;
+    .activeUnderline{
+        @include underline;
+        border-bottom-color: $default-color;
+        margin: 0 0 -1px 0;
+    }
+    .inactiveUnderline{
+        @include underline;
+        margin: 0 0 -1px 0;
+    }
+}
+
+.iActive{
+    @include menu-item($is-active:true)
+} 
+.iInactive{
+    @include menu-item($is-active:false)            
+}  

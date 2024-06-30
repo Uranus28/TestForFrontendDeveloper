@@ -32,14 +32,12 @@
 
             }
             cursor: pointer;
-        }
-        
+        }        
     }
     p{
         @include text-center-p($font-MontserratRegular,0.875emem, $field-font-color);
         width:100%;        
-        margin:5px
-        
+        margin:5px        
     }
     br {
         display: block;
@@ -76,5 +74,4 @@
             cursor: pointer;
         }
     }
-
 }

@@ -13,3 +13,36 @@ export const pages = [
     icon: IconType.Weather,
   },
 ];
+
+export const INFO = "Information";
+export const SETTINGS = "Settings";
+
+export const profilePages = [
+  {
+    name: INFO,
+    id: "0",
+  },
+  {
+    name: SETTINGS,
+    id: "1",
+  },
+];
+
+export const settings = [
+  {
+    name: "Amet minim mollit non deserunt",
+    id: "0",
+  },
+  {
+    name: "Amet minim mollit non deserunt",
+    id: "1",
+  },
+  {
+    name: "Amet minim mollit non deserunt",
+    id: "2",
+  },
+  {
+    name: "Amet minim mollit non deserunt",
+    id: "3",
+  },
+];

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import { Icon } from "./Icon";
+import { IconH } from "./IconH";
 import styles from "./linkH.module.scss";
 
 interface LinkHProps {
@@ -24,7 +24,7 @@ export const LinkH: FC<LinkHProps> = ({
       to={link}
       onClick={() => setPage(link)}
     >
-      {hasIcon && <Icon path={link as string} />}
+      {hasIcon && <IconH path={link as string} />}
       {name}
     </Link>
   );

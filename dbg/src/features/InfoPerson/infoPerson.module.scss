@@ -1,0 +1,30 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+
+.personBox{
+    align-self: self-start;
+    width:94%;
+    margin-left: 2%;
+    
+    p{
+        @include text-center-p($font-MontserratRegular,0.875emem, $field-font-color);
+        justify-content: left;
+        width:90%;        
+        margin:10px;
+    }
+    br {
+        display: block;
+        margin: 100px 0;
+     }
+    .regularText{
+        @include text-center-p($font-MontserratRegular,0.875emem, black);
+        letter-spacing: 0px;
+    }
+}
+.icon{
+    margin-right: 5px;
+    g{
+        stroke:$field-font-color;
+    }
+}

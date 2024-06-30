@@ -1,42 +1,25 @@
 import { FC, useState } from "react";
 import styles from "./profileInfo.module.scss";
-import { ReactComponent as GenderIcon } from "../../shared/assets/icons/gender.svg";
-import { ReactComponent as NameIcon } from "../../shared/assets/icons/name.svg";
-import { ReactComponent as EmailIcon } from "../../shared/assets/icons/email.svg";
-import { ReactComponent as DateIcon } from "../../shared/assets/icons/date.svg";
-import { ReactComponent as AgeIcon } from "../../shared/assets/icons/age.svg";
+import { INFO, SETTINGS } from "../../shared/config/consts";
+import { InfoPerson } from "../../features/InfoPerson/InfoPerson";
+import { Menu } from "../../features/Menu/Menu";
+import { Settings } from "../../features/Settings/Settings";
 
 export const ProfileInfo: FC = () => {
-  const [mode, setMode] = useState(true);
-  return mode ? (
+  const [mode, setMode] = useState(INFO);
+  const [checkedState, setCheckedState] = useState<boolean[]>(
+    new Array(4).fill(false),
+  );
+  return (
     <div className={styles.profileInfo}>
-      <p id="info">
-        <GenderIcon className={styles.icon} />
-        {"Gender:"}
-        <span className={styles.regularText}>gender</span>
-      </p>
-      <p id="info">
-        <NameIcon className={styles.icon} />
-        {"Name: "}
-        <span className={styles.regularText}>personName</span>
-      </p>
-      <p id="info">
-        <EmailIcon className={styles.icon} />
-        {"Email: "}
-        <span className={styles.regularText}>email</span>
-      </p>
-      <p id="info">
-        <DateIcon className={styles.icon} />
-        {"Date of Birth: "}
-        <span className={styles.regularText}>date</span>
-      </p>
-      <p id="info">
-        <AgeIcon className={styles.icon} />
-        {"Age: "}
-        <span className={styles.regularText}>age</span>
-      </p>
+      <Menu mode={mode} setMode={setMode} />
+      {mode === INFO && <InfoPerson />}
+      {mode === SETTINGS && (
+        <Settings
+          checkedState={checkedState}
+          setCheckedState={setCheckedState}
+        />
+      )}
     </div>
-  ) : (
-    <div className={styles.profileInfo}>Насьройки</div>
   );
 };

@@ -1,0 +1,44 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/fonts.scss';
+@import '../../shared/styles/breakpoints.scss';
+
+@mixin checkboxDiv($font-color){
+    @include text-center-p($font-MontserratRegular,0.875emem, $font-color,left);
+    justify-content: left;
+    margin:10px;
+    @include mobile{
+        margin:1px;
+    }
+    .checkbox{
+        box-sizing: border-box;
+        position:relative;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+    
+        border: 2px solid $font-color;
+        border-radius: 3px;
+        margin-right: 5px;
+        &:hover{            
+            cursor: pointer;
+        }
+        &:active{
+            
+            cursor: pointer;
+        }
+    }
+    .icon{
+        position: relative;
+        scale: 1.5;
+        right:2px;
+        top:3px
+    }
+}
+
+.activeCheckbox{
+    @include checkboxDiv($field-font-color)
+}
+.inactiveCheckbox{
+    @include checkboxDiv($inactive-button-font-color)
+}

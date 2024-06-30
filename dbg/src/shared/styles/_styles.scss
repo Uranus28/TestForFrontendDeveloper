@@ -39,11 +39,11 @@
 
 /* mixin для выравнивания текста для */
 
-@mixin text-center-p($font-family,$font-size,$color){
+@mixin text-center-p($font-family,$font-size,$color,$text-align:center){
   @include default-style;
   font-family: $font-family;
   font-size: $font-size;
-  text-align: center;
+  text-align: $text-align;
   border: none;
   color: $color;
   letter-spacing: 0.5px;
