@@ -13,6 +13,7 @@ export const WeatherPage: FC = () => {
     <Container>
       <div className={styles.box}>
         <SearchBar />
+        <div className={styles.weather} />
         {/* <div>
         <Loader />
       </div> */}

@@ -4,11 +4,11 @@
 @import '../../shared/styles/breakpoints.scss';
 
 .box{
-    @include box-page($width:1110px,$height:553px);
+    @include box-page($width:1110px,$height:585px);
     flex-direction: column;
     position:fixed;
     @include mobile{
-        height: 658px;
+        height: 585px;
     }
     .insideBox{
         @include default-style;
@@ -17,5 +17,18 @@
             flex-direction: column;
         }   
         margin-bottom: 0px 
+    }
+    .weather{
+        @include box-div-weather(1062px,439px);
+        margin:25px;
+        position: absolute;
+        bottom: 0px;
+        @include tablet{
+           width: 728px;
+        } 
+        @include mobile{
+            width: 320px;
+         } 
+        background-color: brown;
     }
 }

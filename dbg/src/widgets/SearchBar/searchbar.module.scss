@@ -1,6 +1,7 @@
 @import '../../shared/styles/styles';
 @import '../../shared/styles/colors.scss';
 @import '../../shared/styles/breakpoints.scss';
+@import '../../shared/styles/fonts.scss';
 
 .searchBar{
     @include default-style;
@@ -10,14 +11,17 @@
     align-items: center;
     width:100%;
     top: 0px;
-    .input{       
+    .inputDiv{       
         border-width: 1px;     
         height: 46.4px;
         width: 878px;
+        align-items: center;
         background-color: $layout-color;
         border-radius: 5px;
         border-width: 1px;
         border-style: solid; 
+        display: flex;
+        justify-content: center;
         border-color: $search-bar-color;
         margin:25px;
         margin-right: 0px;
@@ -27,5 +31,15 @@
         @include mobile{
             width: 240px;
         } 
+        .input{
+            width:100%;
+            font-size: 0.875em;
+            font-family: $font-MontserratRegular;
+            background-color: transparent;
+            padding: 15px;
+            border-radius: 5px;
+            border-style:none;
+            outline-width: 0;
+        }
     }
 }
