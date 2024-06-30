@@ -1,0 +1,21 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/effects.scss';
+@import '../../shared/styles/breakpoints.scss';
+
+.box{
+    @include box-page($width:1110px,$height:553px);
+    flex-direction: column;
+    position:fixed;
+    @include mobile{
+        height: 658px;
+    }
+    .insideBox{
+        @include default-style;
+        flex-direction: row;   
+        @include mobile{
+            flex-direction: column;
+        }   
+        margin-bottom: 0px 
+    }
+}

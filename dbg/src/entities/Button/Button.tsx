@@ -8,18 +8,23 @@ interface ButtonProps {
   text: string;
   icon?: IconType;
   onClick?: () => void;
+  type?: "simple" | "default";
 }
 
 export const Button: FC<ButtonProps> = ({
   text,
   icon = null,
   onClick = () => {},
+  type = "default",
 }) => {
   return (
-    <button className={style.button} onClick={onClick}>
+    <button
+      className={type === "simple" ? style.buttonSimplified : style.button}
+      onClick={onClick}
+    >
       {icon === IconType.Refresh && <RefreshIcon className={style.icon} />}
       {icon === IconType.Search && <SearchIcon className={style.icon} />}
-      {text}
+      <p className={style.text}>{text}</p>
     </button>
   );
 };

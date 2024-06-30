@@ -1,0 +1,31 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/breakpoints.scss';
+
+.searchBar{
+    @include default-style;
+    @include underline;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    top: 0px;
+    .input{       
+        border-width: 1px;     
+        height: 46.4px;
+        width: 878px;
+        background-color: $layout-color;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid; 
+        border-color: $search-bar-color;
+        margin:25px;
+        margin-right: 0px;
+        @include tablet{
+            width: 536px;
+        } 
+        @include mobile{
+            width: 240px;
+        } 
+    }
+}

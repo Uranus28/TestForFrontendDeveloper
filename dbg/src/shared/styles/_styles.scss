@@ -84,3 +84,12 @@
         width:100%;
     }
 }
+
+/*mixin - подчеркивание*/
+
+@mixin underline{
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgray;
+}
+

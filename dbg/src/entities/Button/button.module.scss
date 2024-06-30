@@ -2,7 +2,8 @@
 @import '../../shared/styles/fonts.scss';
 @import '../../shared/styles/breakpoints.scss';
 @import '../../shared/styles/styles';
-.button{
+
+@mixin button{
     @include text-center($font-MontserratRegular,1em,$button-font-color,48px,160px);
     margin: 5px auto;
     padding: .3em 2em;
@@ -19,14 +20,28 @@
         background-color: $press-color;
         cursor: pointer;
     }
+}
+.button{
+    @include button;
     @include mobile{
         width: 308px;
     }
-    
-    
 }
-
+.buttonSimplified{
+    @include button;
+    @include mobile{
+        width: 48px;
+        padding: 1em;
+        .text{
+            display: none;
+        }
+        .icon{
+            margin-right: 0px;
+        }
+    }
+}
 .icon{
+    flex-shrink: 0;
     margin-right: 5px;
 }
 

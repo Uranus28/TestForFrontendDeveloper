@@ -2,12 +2,6 @@
 @import '../../shared/styles/fonts.scss';
 @import '../../shared/styles/styles';
 
-@mixin underline{
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: lightgray;
-}
-
 @mixin menu-item($is-active:true){
     padding: .5em 1em;
     text-decoration: none;
