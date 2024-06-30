@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none"><g stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" clip-path="url(#a)"><path d="M32 42.667c5.891 0 10.667-4.776 10.667-10.667S37.89 21.333 32 21.333 21.333 26.11 21.333 32 26.11 42.667 32 42.667ZM16.8 47.2l-1.867 1.867M8 32h2.667H8ZM32 8v2.667V8Zm21.333 24H56h-2.667ZM32 53.333V56v-2.667Zm-17.067-38.4L16.8 16.8l-1.867-1.867Zm34.134 0L47.2 16.8l1.867-1.867ZM47.2 47.2l1.867 1.867L47.2 47.2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h64v64H0z"/></clipPath></defs></svg>
+<svg width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_4_1710)">
+<path d="M32.4999 42.6667C38.391 42.6667 43.1666 37.8911 43.1666 32C43.1666 26.109 38.391 21.3334 32.4999 21.3334C26.6089 21.3334 21.8333 26.109 21.8333 32C21.8333 37.8911 26.6089 42.6667 32.4999 42.6667Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.3 47.2L15.4333 49.0667M8.5 32H11.1667H8.5ZM32.5 8V10.6667V8ZM53.8333 32H56.5H53.8333ZM32.5 53.3333V56V53.3333ZM15.4333 14.9333L17.3 16.8L15.4333 14.9333ZM49.5667 14.9333L47.7 16.8L49.5667 14.9333ZM47.7 47.2L49.5667 49.0667L47.7 47.2Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_4_1710">
+<rect width="64" height="64" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
