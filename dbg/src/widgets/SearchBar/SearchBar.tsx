@@ -9,7 +9,7 @@ export const SearchBar: FC = () => {
       <div className={styles.inputDiv}>
         <input className={styles.input} id="search" name="search" />
       </div>
-      <Button type={"simple"} text="Search" icon={IconType.Search} />
+      <Button type="simple" text="Search" icon={IconType.Search} />
     </div>
   );
 };

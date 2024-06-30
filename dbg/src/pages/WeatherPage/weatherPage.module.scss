@@ -2,24 +2,6 @@
 @import '../../shared/styles/colors.scss';
 @import '../../shared/styles/effects.scss';
 @import '../../shared/styles/breakpoints.scss';
-@import '../../shared/styles/fonts.scss';
-
-@mixin medium{
-    @include text-center-p($font-MontserratMedium,0.875em,white);
-    letter-spacing: 1px;
-}
-@mixin mediumSmall{
-    @include text-center-p($font-MontserratMedium,0.875em,white);
-}
-@mixin semiBold{
-    @include text-center-p($font-MontserratSemiBold,1.5em,white);
-}
-@mixin regularBig{
-    @include text-center-p($font-MontserratRegular,2.5em,white);
-}
-@mixin regular{
-    @include text-center-p($font-MontserratRegular,0.875em,white);
-}
 
 .box{
     @include box-page($width:1110px,$height:585px);
@@ -36,54 +18,4 @@
         }   
         margin-bottom: 0px 
     }
-    .weather{
-        @include box-div-weather(1062px,439px);
-        margin:25px;
-        position: absolute;
-        bottom: 0px;
-        @include tablet{
-           width: 728px;
-        } 
-        @include mobile{
-            width: 320px;
-         } 
-        background-color: brown;
-        .date{
-            @include medium();
-            position: absolute;
-            margin:0px;
-            margin-top:10px;
-            top: 70px;
-        }
-        .curTemp{
-            @include medium();
-            margin:0px;
-            margin-top:10px;
-        }
-        .feels{
-            @include regular();
-            .mediumSmall{
-                @include text-center-p($font-MontserratMedium,0.875em,white);
-            }
-            margin:0px;
-            margin-top:15px;
-
-        }
-        .place{
-            @include semiBold();
-            position: absolute;
-            margin:0px;
-            margin-top:43px;
-            top: 0px;
-        }
-        .tempr{
-            @include regularBig();
-            margin:0px;
-            margin-top:20px;
-        }
-    }
-}
-.icon{
-    position:relative;
-    margin-top:60px;
 }

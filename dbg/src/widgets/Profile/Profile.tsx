@@ -5,16 +5,16 @@ import { ReactComponent as EditIcon } from "../../shared/assets/icons/edit.svg";
 export const Profile: FC = () => {
   return (
     <div className={styles.profile}>
-      <p className={styles.profileText}>{"PROFILE"}</p>
-      <p className={styles.boldName}>{"Name Surname"}</p>
+      <p className={styles.profileText}>PROFILE</p>
+      <p className={styles.boldName}>Name Surname</p>
       <br />
       <br />
       <p id="info">
-        Login:
+        Login: &nbsp;
         <span className={styles.regularText}>@namePerson</span>
       </p>
       <p id="info">
-        Password:
+        Password:&nbsp;
         <span className={styles.linkText}>change password</span>
       </p>
       <EditIcon className={styles.profileButton} />

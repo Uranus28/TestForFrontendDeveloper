@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import styles from "./checkbox.module.scss";
 import { ReactComponent as CheckedIcon } from "../../shared/assets/icons/checked.svg";
 
