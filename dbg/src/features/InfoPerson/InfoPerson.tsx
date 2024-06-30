@@ -11,27 +11,27 @@ export const InfoPerson: FC = () => {
     <div className={styles.personBox}>
       <p id="info">
         <GenderIcon className={styles.icon} />
-        {"Gender:"}
+        Gender: &nbsp;
         <span className={styles.regularText}>gender</span>
       </p>
       <p id="info">
         <NameIcon className={styles.icon} />
-        {"Name: "}
+        Name: &nbsp;
         <span className={styles.regularText}>personName</span>
       </p>
       <p id="info">
         <EmailIcon className={styles.icon} />
-        {"Email: "}
+        Email: &nbsp;
         <span className={styles.regularText}>email</span>
       </p>
       <p id="info">
         <DateIcon className={styles.icon} />
-        {"Date of Birth: "}
+        Date of Birth: &nbsp;
         <span className={styles.regularText}>date</span>
       </p>
       <p id="info">
         <AgeIcon className={styles.icon} />
-        {"Age: "}
+        Age: &nbsp;
         <span className={styles.regularText}>age</span>
       </p>
     </div>
