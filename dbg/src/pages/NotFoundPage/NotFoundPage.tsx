@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container } from "../../shared/Container/Container";
+import { Container } from "../../entities/Container/Container";
 import { Button } from "../../entities/Button/Button";
 
 export const NotFoundPage: FC = () => {

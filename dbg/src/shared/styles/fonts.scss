@@ -46,3 +46,20 @@ $font-MontserratLight: 'MontserratLight';
 $font-MontserratMedium: 'MontserratMedium';
 $font-MontserratSemiBold: 'MontserratSemiBold';
 $font-MontserratRegular: 'MontserratRegular';
+
+@mixin medium($color:white){
+    @include text-center-p($font-MontserratMedium,0.875em,$color);
+    letter-spacing: 1px;
+}
+@mixin mediumSmall($color:white){
+    @include text-center-p($font-MontserratMedium,0.875em,$color);
+}
+@mixin semiBold($color:white){
+    @include text-center-p($font-MontserratSemiBold,1.5em,$color);
+}
+@mixin regularBig($color:white){
+    @include text-center-p($font-MontserratRegular,2.5em,$color);
+}
+@mixin regular($color:white){
+    @include text-center-p($font-MontserratRegular,0.875em,$color);
+}

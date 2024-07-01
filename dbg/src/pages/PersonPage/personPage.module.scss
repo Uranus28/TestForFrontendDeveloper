@@ -32,3 +32,24 @@
         
     }
 }
+.modal{
+    @include box-div(350px,644px);
+    .modalInfo{
+        @include box-div-modal(350px,603px)
+    }
+    .exitIcon{
+        @include default-style;
+        position: relative;
+        margin:10px;
+        margin-left: 90%;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            path{
+                stroke:$inactive-button-font-color;
+            }
+            cursor: pointer;
+        } 
+    }
+}

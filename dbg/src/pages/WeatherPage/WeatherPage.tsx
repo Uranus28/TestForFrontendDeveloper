@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Container } from "../../shared/Container/Container";
+import { Container } from "../../entities/Container/Container";
 import styles from "./weatherPage.module.scss";
 import { SearchBar } from "../../widgets/SearchBar/SearchBar";
 import { WeatherInfo } from "../../widgets/WeatherInfo/WeatherInfo";

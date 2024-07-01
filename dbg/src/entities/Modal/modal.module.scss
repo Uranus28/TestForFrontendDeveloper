@@ -1,0 +1,10 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors';
+
+.modal {
+  @include default-style-size;
+  position: absolute;
+  flex-direction: column;
+  background-color: $bg-modal-color;
+  backdrop-filter: blur(2px);
+}

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Container } from "../../shared/Container/Container";
+import { Container } from "../Container/Container";
 import styles from "./loader.module.scss";
 import { ReactComponent as LoadingIcon } from "../../shared/assets/icons/loading.svg";
 

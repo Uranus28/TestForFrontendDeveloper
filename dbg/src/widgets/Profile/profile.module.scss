@@ -50,13 +50,13 @@
         margin:15px;
         top: 12px;    }
     .boldName{
-        @include text-center($font-MontserratSemiBold,1.5em, black,29px,100%);
+        @include text-center($font-MontserratSemiBold,1.5em, $font-color,29px,100%);
         letter-spacing: 0px;
         position:absolute;
         margin:15px;
         top: 66px;  }
     .regularText{
-        @include text-center-p($font-MontserratRegular,0.875emem, black);
+        @include text-center-p($font-MontserratRegular,0.875emem, $font-color);
         letter-spacing: 0px;
     }
     .linkText{
@@ -75,3 +75,4 @@
         }
     }
 }
+

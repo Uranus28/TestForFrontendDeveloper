@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useNavigate, useRouteError } from "react-router-dom";
 import { Button } from "../../entities/Button/Button";
-import { Container } from "../../shared/Container/Container";
+import { Container } from "../../entities/Container/Container";
 
 /** Type of error sent to the storage. */
 export interface RejectedDataType {

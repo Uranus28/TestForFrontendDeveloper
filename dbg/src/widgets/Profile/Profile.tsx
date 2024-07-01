@@ -2,7 +2,11 @@ import { FC } from "react";
 import styles from "./profile.module.scss";
 import { ReactComponent as EditIcon } from "../../shared/assets/icons/edit.svg";
 
-export const Profile: FC = () => {
+interface ProfileProps {
+  setModal: () => void;
+}
+
+export const Profile: FC<ProfileProps> = ({ setModal }) => {
   return (
     <div className={styles.profile}>
       <p className={styles.profileText}>PROFILE</p>
@@ -17,7 +21,7 @@ export const Profile: FC = () => {
         Password:&nbsp;
         <span className={styles.linkText}>change password</span>
       </p>
-      <EditIcon className={styles.profileButton} />
+      <EditIcon className={styles.profileButton} onClick={setModal} />
     </div>
   );
 };

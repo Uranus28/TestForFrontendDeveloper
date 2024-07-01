@@ -1,4 +1,4 @@
-@import '../styles/styles';
+@import '../../shared/styles/styles';
 .container {
   @include default-style-size;
   flex-direction: column;

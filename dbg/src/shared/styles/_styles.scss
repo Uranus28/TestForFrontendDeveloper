@@ -55,13 +55,19 @@
   @include default-style;
   width: $width;
   height: $height;
+  flex-direction: column;
+}
+
+@mixin box-div-modal($width, $height: $width){
+  @include box-div($width:$width,$height:$height);
+  background-color: white;
+  border-radius: 20px;
 }
 
 @mixin box-div-white($width, $height: $width){
   @include box-div($width:$width,$height:$height);
   background-color: white;
   border-radius: 20px;
-  flex-direction: column;
   @include shadow-small;
 }
 

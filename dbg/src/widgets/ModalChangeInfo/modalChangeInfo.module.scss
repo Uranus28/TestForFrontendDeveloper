@@ -1,0 +1,41 @@
+@import '../../shared/styles/styles';
+@import '../../shared/styles/colors.scss';
+@import '../../shared/styles/breakpoints.scss';
+@import '../../shared/styles/fonts.scss';
+
+.modal{
+    @include box-div(350px,644px);
+    .modalInfo{
+        @include box-div-modal(350px,603px);
+        position: relative;
+        .editProfile{
+            @include default-style;
+            @include semiBold($font-color);
+            position: absolute;
+            margin:20px;
+            top:0px
+        }
+        .saveButton{
+            @include default-style;
+            position: absolute;
+            margin:20px;
+            bottom:0px
+        }
+    }
+    .exitIcon{
+        @include default-style;
+        position: relative;
+        margin:10px;
+        margin-left: 90%;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            path{
+                stroke:$inactive-button-font-color;
+            }
+            cursor: pointer;
+        } 
+    }
+    
+}

@@ -41,6 +41,7 @@
             "tsx": "never"
           }
       ],
+      "no-nested-ternaries":"off",
       "require-jsdoc":"off",
       "no-console": "off",
       "no-var": "error",

@@ -1,10 +1,11 @@
-@import '../../shared/styles/colors.scss';
-@import '../../shared/styles/fonts.scss';
-@import '../../shared/styles/breakpoints.scss';
-@import '../../shared/styles/styles';
+@import '../../../shared/styles/colors.scss';
+@import '../../../shared/styles/fonts.scss';
+@import '../../../shared/styles/breakpoints.scss';
+@import '../../../shared/styles/styles';
+
 
 @mixin button{
-    @include text-center($font-MontserratRegular,1em,$button-font-color,48px,160px);
+    @include text-center($font-MontserratRegular,1em,$button-font-color,38.4px,96px);
     margin: 5px auto;
     padding: .3em 2em;
     border-radius: 5px;
@@ -21,16 +22,19 @@
         cursor: pointer;
     }
 }
-.button{
+
+
+.defaultbutton{
     @include button;
     @include mobile{
-        width: 308px;
+        width: 244px;
     }
 }
-.buttonSimplified{
+.simplebutton{
     @include button;
     @include mobile{
-        width: 48px;
+        width: 16px;
+        height: 16px;
         padding: 1em;
         .text{
             display: none;
@@ -40,13 +44,11 @@
         }
     }
 }
-.buttonBig{
+.bigbutton{
     @include button;
-    width: 308px;
+    width: 244px;
 }
 .icon{
     flex-shrink: 0;
     margin-right: 5px;
 }
-
-

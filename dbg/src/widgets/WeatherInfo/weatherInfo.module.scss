@@ -3,24 +3,6 @@
 @import '../../shared/styles/breakpoints.scss';
 @import '../../shared/styles/fonts.scss';
 
-
-@mixin medium{
-    @include text-center-p($font-MontserratMedium,0.875em,white);
-    letter-spacing: 1px;
-}
-@mixin mediumSmall{
-    @include text-center-p($font-MontserratMedium,0.875em,white);
-}
-@mixin semiBold{
-    @include text-center-p($font-MontserratSemiBold,1.5em,white);
-}
-@mixin regularBig{
-    @include text-center-p($font-MontserratRegular,2.5em,white);
-}
-@mixin regular{
-    @include text-center-p($font-MontserratRegular,0.875em,white);
-}
-
 .weather{
     @include box-div-weather(1062px,439px);
     margin:25px;
