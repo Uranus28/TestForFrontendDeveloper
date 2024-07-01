@@ -19,12 +19,14 @@
         position: absolute;
         right:5%;
         top:5%;
-        &:hover{
-            g{
-                stroke:$hover-color;
+        @media (hover: hover) {
+            &:hover{
+                g{
+                    stroke:$hover-color;
+                    cursor: pointer;
+                }
                 cursor: pointer;
             }
-            cursor: pointer;
         }
         &:active{
             g{
@@ -63,10 +65,12 @@
         @include text-center-p($font-MontserratRegular,0.875emem, $default-color);
         letter-spacing: 0px;
         text-decoration: underline;
-        &:hover{
-            text-decoration: none;
-            color: $hover-color;
-            cursor: pointer;
+        @media (hover: hover) {
+            &:hover{
+                text-decoration: none;
+                color: $hover-color;
+                cursor: pointer;
+            }
         }
         &:active{
             text-decoration: none;

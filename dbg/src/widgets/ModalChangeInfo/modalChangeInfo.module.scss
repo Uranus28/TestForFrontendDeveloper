@@ -59,11 +59,13 @@
         g{
             stroke: $default-color;
         }
-        &:hover{
-            path{
-                stroke:$hover-color;
+        @media (hover: hover) {
+            &:hover{
+                path{
+                    stroke:$hover-color;
+                }
+                cursor: pointer;
             }
-            cursor: pointer;
         }
         &:active{
             path{
@@ -77,8 +79,10 @@
         position: relative;
         margin:10px;
         margin-left: 90%;
-        &:hover{
-            cursor: pointer;
+        @media (hover: hover) {
+                &:hover{
+                cursor: pointer;
+            }
         }
         &:active{
             path{

@@ -14,9 +14,11 @@
     @else{
         @include text-center($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
     }
-    &:hover{
-        color: $hover-color;
-        cursor: pointer;
+    @media (hover: hover) {
+        &:hover{
+            color: $hover-color;
+            cursor: pointer;
+        }
     }
     &:active{
         color: $press-color;

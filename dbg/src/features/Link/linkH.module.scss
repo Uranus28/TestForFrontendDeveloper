@@ -24,14 +24,15 @@
         }
         @include text-center($font-MontserratMedium,1em,$inactive-button-font-color,32px,105px);
     }
-
-    &:hover{
-        .headerIcon{
-            g{
-                stroke:$hover-color
+    @media (hover: hover) {
+        &:hover{
+            .headerIcon{
+                g{
+                    stroke:$hover-color
+                }
             }
+            color: $hover-color;
         }
-        color: $hover-color;
     }
     &:active{
         .headerIcon{

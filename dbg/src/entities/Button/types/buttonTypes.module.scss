@@ -13,9 +13,11 @@
     background-color: $default-color;
     letter-spacing: 0.5px;
 
-    &:hover{
-        background-color: $hover-color;
-        cursor: pointer;
+    @media (hover: hover) {
+        &:hover{
+            background-color: $hover-color;
+            cursor: pointer;
+        }
     }
     &:active{
         background-color: $press-color;

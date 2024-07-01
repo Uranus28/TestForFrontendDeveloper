@@ -42,8 +42,10 @@
         position: relative;
         margin:10px;
         margin-left: 90%;
-        &:hover{
-            cursor: pointer;
+        @media (hover: hover) {
+            &:hover{
+                cursor: pointer;
+            }
         }
         &:active{
             path{

@@ -20,8 +20,10 @@
         border: 2px solid $font-color;
         border-radius: 3px;
         margin-right: 5px;
-        &:hover{            
-            cursor: pointer;
+        @media (hover: hover) {
+            &:hover{            
+                cursor: pointer;
+            }
         }
         &:active{
             

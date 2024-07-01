@@ -1,5 +1,9 @@
 @import './breakpoints.scss';
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @mixin default-style{
   display: flex;
   align-items: center;
