@@ -17,43 +17,30 @@ export const ModalChangeInfo: FC<ModalChangeInfoProps> = ({ setModal }) => {
         <ExitIcon className={styles.exitIcon} onClick={setModal} />
         <div className={styles.modalInfo}>
           <p className={styles.editProfile}>Edit profile</p>
-          <p className={styles.text}>
+          <div className={styles.text}>
             Name: &nbsp;
-            <div className={styles.inputDiv}>
-              <input className={styles.input} id="name" name="name" />
-            </div>
-          </p>
-          <p className={styles.text}>
+            <input id="name" name="name" />
+          </div>
+          <div className={styles.text}>
             Surname:&nbsp;
-            <div className={styles.inputDiv}>
-              <input className={styles.input} id="surname" name="surname" />
-            </div>
-          </p>
-          <p className={styles.text}>
+            <input id="surname" name="surname" />
+          </div>
+          <div className={styles.text}>
             Login:&nbsp;
-            <div className={styles.inputDiv}>
-              <input className={styles.input} id="login" name="login" />
-            </div>
-          </p>
-          <p className={styles.text}>
+            <input id="login" name="login" />
+          </div>
+          <div className={styles.text}>
             E-mail:&nbsp;
-            <div className={styles.inputDiv}>
-              <input className={styles.input} id="email" name="email" />
-            </div>
-          </p>
-          <p className={styles.text}>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div className={styles.text}>
             Gender:&nbsp;
-            <div className={styles.inputDiv}>
-              <input className={styles.input} id="gender" name="gender" />
-            </div>
-          </p>
-          <p className={styles.text}>
+            <input id="gender" name="gender" />
+          </div>
+          <div className={styles.text}>
             Date of Birth:&nbsp;
-            <div className={styles.inputDiv}>
-              <input className={styles.input} id="date" name="date" />
-              <DateIcon className={styles.dateButton} />
-            </div>
-          </p>
+            <input type="date" id="date" name="date" />
+          </div>
           <div className={styles.saveButton}>
             <Button
               text="Save"

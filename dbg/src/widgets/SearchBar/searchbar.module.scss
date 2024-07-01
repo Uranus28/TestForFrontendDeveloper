@@ -11,28 +11,16 @@
     align-items: center;
     width:100%;
     top: 0px;
-    .inputDiv{       
-        border-width: 1px;     
-        height: 46.4px;
-        width: 878px;
-        align-items: center;
-        background-color: $layout-color;
-        border-radius: 5px;
-        border-width: 1px;
-        border-style: solid; 
-        display: flex;
-        justify-content: center;
-        border-color: $search-bar-color;
+    .input{
+        @include input(14.8px);
+        width: 846.8px;
         margin:25px;
         margin-right: 0px;
         @include tablet{
-            width: 536px;
+            width: 504.8px;
         } 
         @include mobile{
-            width: 240px;
+            width: 208.8px;
         } 
-        .input{
-            @include input();
-        }
     }
 }

@@ -6,9 +6,7 @@ import styles from "./searchbar.module.scss";
 export const SearchBar: FC = () => {
   return (
     <div className={styles.searchBar}>
-      <div className={styles.inputDiv}>
-        <input className={styles.input} id="search" name="search" />
-      </div>
+      <input className={styles.input} id="search" name="search" />
       <Button type="simple" text="Search" icon={IconType.Search} />
     </div>
   );

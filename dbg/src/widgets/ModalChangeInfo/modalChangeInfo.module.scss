@@ -21,22 +21,21 @@
             margin:20px;
             bottom:0px
         }
-        .inputDiv{       
-            border-width: 1px;     
-            height: 42.4px;
-            width: 300.4px;
-            align-items: center;
-            background-color: $layout-color;
-            border-radius: 5px;
-            border-width: 1px;
-            border-style: solid; 
-            display: flex;
-            justify-content: center;
-            border-color: $search-bar-color;
-            margin:5px;margin-left:0px;
-            .input{
-                @include input();
+        input[type="date"]{
+            @media (hover: hover) {
+                &:hover{
+                    
+                    cursor:text;
+                }
             }
+        }::-webkit-calendar-picker-indicator {
+            scale:2;
+            right: 10px;
+            background-image: url('../../shared/assets/icons/dateEdit.svg');
+        }
+        input{
+            @include input();
+            
         }
         .text{
             @include text-center-p($font-MontserratRegular,0.875emem, $field-font-color);
@@ -50,30 +49,7 @@
             top:-10px;
         }
     }
-    .dateButton{
-        @include default-style;
-        position: relative;
-        margin:10px;
-        scale: 1.5;
-        width:24px;
-        g{
-            stroke: $default-color;
-        }
-        @media (hover: hover) {
-            &:hover{
-                path{
-                    stroke:$hover-color;
-                }
-                cursor: pointer;
-            }
-        }
-        &:active{
-            path{
-                stroke:$press-color;
-            }
-            cursor: pointer;
-        } 
-    }
+    
     .exitIcon{
         @include default-style;
         position: relative;

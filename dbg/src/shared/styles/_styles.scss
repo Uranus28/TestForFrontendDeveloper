@@ -111,14 +111,17 @@
 
 /*mixin - input for div*/
 
-@mixin input($padding:15px){
-  width:100%;
+@mixin input($padding:12.8px){
+  width: 274.8px;
   font-size: 0.875em;
   font-family: $font-MontserratRegular;
-  background-color: transparent;
+  background-color: $layout-color;
   padding: $padding;
-  color:$font-color;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 5px;
-  border-style:none;
+  border-color: $search-bar-color;
+  color:$font-color;
+  margin:5px;margin-left:0px;
   outline-width: 0;
 }
