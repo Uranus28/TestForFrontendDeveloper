@@ -13,11 +13,11 @@ export const Profile: FC<ProfileProps> = ({ setModal }) => {
       <p className={styles.boldName}>Name Surname</p>
       <br />
       <br />
-      <p id="info">
+      <p>
         Login: &nbsp;
         <span className={styles.regularText}>@namePerson</span>
       </p>
-      <p id="info">
+      <p>
         Password:&nbsp;
         <span className={styles.linkText}>change password</span>
       </p>
